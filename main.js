@@ -9,9 +9,9 @@ calculateButton.addEventListener("click", () => {
     let totalAmount = amount * (1 + tipPercent / 100); //get total billing amount
     let tipAmount = amount * (tipPercent / 100); //get tip amount
     outputText.innerText = `
-        Total Amount: ${totalAmount.toFixed(2)}
-        Tip Amount: ${tipAmount.toFixed(2)}
+        Total Amount: $${totalAmount.toFixed(2)}
+        Tip Amount: $${tipAmount.toFixed(2)}
         Tip Percent: ${tipPercent}%
-        Bill Amount: ${amount.toFixed(2)}
+        Bill Amount: $${amount.toFixed(2)}
     `; //set output text area to format total billing amount, tip amount, tip percent and bill amount
 });
