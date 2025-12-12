@@ -1,10 +1,11 @@
-const amountInput = document.getElementById("amount");
-const tipPercentInput = document.getElementById("tip-percent");
-const calculateButton = document.getElementById("calculate");
-const outputText = document.getElementById("output");
+const amountInput = document.getElementById("amount"); //amount input
+const tipPercentInput = document.getElementById("tip-percent"); //tip percent input
+const calculateButton = document.getElementById("calculate"); //calculate button
+const outputText = document.getElementById("output"); //output text
 calculateButton.addEventListener("click", () => {
-    let amount = parseFloat(amountInput.value);
-    let tipPercent = parseFloat(tipPercentInput.value);
-    let totalAmount = amount * (1 + tipPercent / 100);
-    outputText.innerText = `Total Amount: ${totalAmount.toFixed(2)}`;
+    //when calculate button is pressed
+    let amount = parseFloat(amountInput.value); //get amount value
+    let tipPercent = parseFloat(tipPercentInput.value); //get tip percent value
+    let totalAmount = amount * (1 + tipPercent / 100); //get total billing amount
+    outputText.innerText = `Total Amount: ${totalAmount.toFixed(2)}`; //format total billing amount
 });
