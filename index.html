@@ -5,8 +5,10 @@
     </head>
     <body>
         <h1>Tip Calculator</h1>
-        Amount: <input type="number" id="amount" min="0" required /> Tip
-        Percent: <input type="number" id="tip-percent" min="0" required />
+        Amount:
+        <input type="number" id="amount" min="0" step="0.01" required /> Tip
+        Percent:
+        <input type="number" id="tip-percent" min="0" step="0.01" required />
         <button id="calculate">Calculate Tip Amount</button>
         <div id="output"></div>
         <script src="main.js"></script>
