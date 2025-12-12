@@ -7,5 +7,6 @@ calculateButton.addEventListener("click", () => {
     let amount = parseFloat(amountInput.value); //get amount value
     let tipPercent = parseFloat(tipPercentInput.value); //get tip percent value
     let totalAmount = amount * (1 + tipPercent / 100); //get total billing amount
-    outputText.innerText = `Total Amount: ${totalAmount.toFixed(2)}`; //set output text area to format total billing amount
+    let tipAmount = amount * (tipPercent / 100); //get tip amount
+    outputText.innerText = `Total Amount: ${totalAmount.toFixed(2)}\nTip Amount: ${tipAmount.toFixed(2)}`; //set output text area to format total billing amount and tip amount
 });
