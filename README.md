@@ -8,4 +8,4 @@ including the tip, and displays the result in a user-friendly format.
 
 1. Clone the repository.
 2. Open index.html on your browser.
-3. Enter input values and that's it.
+3. Enter input values, click the Calculate button and that's it.
